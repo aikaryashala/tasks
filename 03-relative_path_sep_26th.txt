@@ -1,6 +1,8 @@
 RELATIVE PATH EXERCISES
 ========================
 
+Using `Git-Bash` do this...  
+
 Download aik-website-sep26th.zip file from this URL using `curl`  
 https://rohinibarla.com/old/aik/aik-website-sep26th.zip  
 
