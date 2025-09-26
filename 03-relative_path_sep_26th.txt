@@ -1,0 +1,59 @@
+RELATIVE PATH EXERCISES
+========================
+
+Download aik-website-sep26th.zip file from this URL using `curl`  
+https://rohinibarla/old/aik/aik-website-sep26th.zip  
+
+Unzip the file and draw the directory structure on paper. And then answer each of these questions.  
+
+PART 1: Understanding Current Directory (.)
+--------------------------------------------
+From index.html, write the path to:
+1. about.html
+2. contact.html
+
+PART 2: Moving Into Subdirectories
+-----------------------------------
+From index.html, write the path to:
+1. products/catalog.html
+2. services/consulting.html
+3. blog/latest.html
+
+PART 3: Moving Up One Level (..)
+---------------------------------
+From products/catalog.html, write the path to:
+1. index.html
+2. about.html
+
+PART 4: Moving Between Sibling Directories
+-------------------------------------------
+From products/catalog.html, write the path to:
+1. services/consulting.html
+2. blog/latest.html
+
+PART 5: Deep Navigation
+------------------------
+From products/electronics/phones.html, write the path to:
+1. index.html (root)
+2. products/catalog.html (parent directory)
+3. products/clothing/mens.html (sibling subdirectory)
+4. blog/2024/january.html (different branch)
+
+PART 6: Complex Paths
+----------------------
+From blog/2024/january.html, write the path to:
+1. assets/images/blog/header-2024.png
+2. products/electronics/laptops.html
+3. admin/users/list.html
+
+PART 7: Asset Linking
+----------------------
+From products/electronics/phones.html, write the path to:
+1. assets/styles/products.css
+2. assets/images/products/phone-banner.jpg
+
+CHALLENGE EXERCISES
+-------------------
+1. From admin/users/permissions.html to blog/2023/november.html
+2. From assets/styles/main.css to products/clothing/kids.html
+3. Find the shortest path from any file to any other file
