@@ -52,9 +52,3 @@ From products/electronics/phones.html, write the path to:
 2. products/catalog.html (parent directory)
 3. products/clothing/mens.html (sibling subdirectory)
 4. blog/2024/january.html (different branch)
-
-PART 9: Other Paths
--------------------
-1. From admin/users/permissions.html to blog/2023/november.html
-2. From assets/styles/main.css to products/clothing/kids.html
-3. Find the shortest path from any file to any other file
