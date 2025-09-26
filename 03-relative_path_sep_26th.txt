@@ -4,7 +4,13 @@ RELATIVE PATH EXERCISES
 Download aik-website-sep26th.zip file from this URL using `curl`  
 https://rohinibarla.com/old/aik/aik-website-sep26th.zip  
 
-Unzip the file and draw the directory structure on paper. And then answer each of these questions.  
+Unzip the file.  
+Delete directories `admin` and `assets` using these 6 commands: `cd`, `ls, `pwd`, `rm`, `rmdir` only.  
+
+
+And now draw the remaining directory structure on paper.   
+And then answer each of these questions.  
+
 
 PART 1: Understanding Current Directory (.)
 --------------------------------------------
@@ -39,20 +45,7 @@ From products/electronics/phones.html, write the path to:
 3. products/clothing/mens.html (sibling subdirectory)
 4. blog/2024/january.html (different branch)
 
-PART 6: Complex Paths
-----------------------
-From blog/2024/january.html, write the path to:
-1. assets/images/blog/header-2024.png
-2. products/electronics/laptops.html
-3. admin/users/list.html
-
-PART 7: Asset Linking
-----------------------
-From products/electronics/phones.html, write the path to:
-1. assets/styles/products.css
-2. assets/images/products/phone-banner.jpg
-
-CHALLENGE EXERCISES
+PART 6: Other Paths
 -------------------
 1. From admin/users/permissions.html to blog/2023/november.html
 2. From assets/styles/main.css to products/clothing/kids.html
