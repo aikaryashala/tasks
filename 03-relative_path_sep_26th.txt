@@ -3,43 +3,49 @@ RELATIVE PATH EXERCISES
 
 Using `Git-Bash` do this...  
 
-Download aik-website-sep26th.zip file from this URL using `curl`  
-https://rohinibarla.com/old/aik/aik-website-sep26th.zip  
+PART 1: Download file and unzip it
+----------------------------------
+1. Download aik-website-sep26th.zip file from this URL using `curl`  
+   https://rohinibarla.com/old/aik/aik-website-sep26th.zip  
+2. Unzip the file. 
 
-Unzip the file.  
+PART 2: Delete directories
+--------------------------
 Delete directories `admin` and `assets` using these 6 commands: `cd`, `ls, `pwd`, `rm`, `rmdir` only.  
 
 
+PART 3: Draw directory and file structure
+-----------------------------------------
 And now draw the remaining directory structure on paper.   
 And then answer each of these questions.  
 
 
-PART 1: Understanding Current Directory (.)
+PART 4: Understanding Current Directory (.)
 --------------------------------------------
 From index.html, write the path to:
 1. about.html
 2. contact.html
 
-PART 2: Moving Into Subdirectories
+PART 5: Moving Into Subdirectories
 -----------------------------------
 From index.html, write the path to:
 1. products/catalog.html
 2. services/consulting.html
 3. blog/latest.html
 
-PART 3: Moving Up One Level (..)
+PART 6: Moving Up One Level (..)
 ---------------------------------
 From products/catalog.html, write the path to:
 1. index.html
 2. about.html
 
-PART 4: Moving Between Sibling Directories
+PART 7: Moving Between Sibling Directories
 -------------------------------------------
 From products/catalog.html, write the path to:
 1. services/consulting.html
 2. blog/latest.html
 
-PART 5: Deep Navigation
+PART 8: Deep Navigation
 ------------------------
 From products/electronics/phones.html, write the path to:
 1. index.html (root)
@@ -47,7 +53,7 @@ From products/electronics/phones.html, write the path to:
 3. products/clothing/mens.html (sibling subdirectory)
 4. blog/2024/january.html (different branch)
 
-PART 6: Other Paths
+PART 9: Other Paths
 -------------------
 1. From admin/users/permissions.html to blog/2023/november.html
 2. From assets/styles/main.css to products/clothing/kids.html
