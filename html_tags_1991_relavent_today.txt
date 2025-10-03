@@ -1,0 +1,194 @@
+HTML Tags
+
+This is a list of tags used in the HTML language. Each tag starts
+with a tag opener (a less than sign) and ends with a tag closer (a
+greater than sign). Many tags have corresponding closing tags which
+identical except for a slash after the tag opener. (For example, the
+TITLE tag).
+
+Some tags take parameters, called attributes. The attributes are given
+after the tag, separated by spaces. Certain attributes have an effect
+simply by their presence, others are followed by an equals sign and
+a value. (See the Anchor tag, for example). The names of tags and
+attributes are not case sensitive: they may be in lower, upper, or
+mixed case with exactly the same meaning. (In this document they
+are generally represented in upper case.)
+
+Currently HTML documents are transmitted without the normal SGML framing
+tags, but if these are included parsers will ignore them.
+
+Title
+-----
+
+The title of a document is given between title tags:
+
+    <TITLE>...
+
+The text between the opening and the closing tags is a title for the
+hypertext node. There should only be one title in any node. It should
+identify the content of the node in a fairly wide context, and should
+ideally fit on one line.
+
+The title is not strictly part of the text of the document, but is
+an attribute of the node. It may not contain anchors, paragraph marks,
+or highlighting. the title may be used to identify the node in a history
+list, to label the window displaying the node, etc. It is not normally
+displayed in the text of a document itself. Contrast titles with headings.
+
+
+Anchors
+-------
+
+The format of an anchor is as follows:
+
+    <A ...>...</A>
+
+The text between the opening tag and the closing tag is either the
+start or destination (or both) of a link. Attributes of the anchor
+tag are as follows.
+
+HREF
+    If the HREF attribute is present, the anchor is sensitive text:
+    the start of a link. If the reader selects this text, he should be
+    presented with another document whose network address is defined by
+    the value of the HREF attribute. The format of the network address
+    is specified elsewhere. This allows for the form HREF=#identifier
+    to refer to another anchor in the same document. If the anchor is
+    in another document, the attribute is a relative name, relative to
+    the documents address (or specified base address if any).
+
+NAME
+    The attribute NAME allows the anchor to be the destination of
+    a link. The value of the parameter is that part of a hypertext address
+    which follows the hash sign.
+
+TYPE
+    An attribute TYPE may give the relationship described by the
+    hypertext link. The type is expressed by a string for extensibility.
+    Strings for types with particular semantics will be registered by
+    the W3 team. The default relationship if none other is given is void.
+
+All attributes are optional, although one of NAME and HREF is necessary
+for the anchor to be useful.
+
+
+Literal text
+------------
+
+These styles allow text of fixed-width characters to be embedded absolutely
+as is into the document. The format is:
+
+    <XMP>
+    ...
+    </XMP>
+
+The text between these tags is to be portrayed in a fixed width font,
+so that any formatting done by character spacing on successive lines
+will be maintained. Between the opening and closing tags:
+
+  * The text may contain any ISO Latin printable characters, including
+    the tag opener, so long as it does not contain the closing tag in
+    full.
+
+  * Line boundaries are significant, and are to be interpreted as a move
+    to the start of a new line.
+
+  * The ASCII Horizontal Tab (HT) character should be interpreted as the
+    smallest positive nonzero number of spaces which will leave the number
+    of characters so far on the line as a multiple of 8. Its use is not
+    recommended however.
+
+The XMP tag is portrayed in a font so that at least 80 characters will
+fit on a line but is otherwise identical to LISTING.
+
+The examples of markup are here given using the XMP tag.
+
+
+Paragraph
+---------
+
+This tag indicates a new paragraph. The exact representation of this
+(indentation, leading, etc) is not defined here, and may be a function
+of other tags, style sheets etc. The format is simply
+
+    <P>
+
+(In SGML terms, paragraph elements are transmitted in minimised form).
+
+
+Headings
+--------
+
+Several levels (at least six) of heading are supported. Note that
+a hypertext document tends to need less levels of heading than a
+normal document whose only structure is given by the nesting of headings.
+
+H1 is the highest level of heading, and is recommended for the start
+of a hypertext node. It is suggested that the first heading be one
+suitable for a reader who is already browsing in related information,
+in contrast to the title tag which should identify the node in a wider
+context.
+
+    <H1>, <H2>, <H3>, <H4>, <H5>, <H6>
+
+These tags are kept as defined in the CERN SGML guide. Their definition
+is completely historical, deriving from the AAP tag set. A difference
+is that HTML documents allow headings to be terminated by closing
+tags:
+
+    <H2>Second level heading</H2>
+
+
+Address
+-------
+
+This tag is for address information, signatures, etc, normally at
+the top or bottom of a document. typically, it is italic and/or right
+justified or indented. The format is:
+
+    <ADDRESS>
+    text ...
+    </ADDRESS>
+
+
+Glossaries
+----------
+
+A glossary (or definition list) is a list of paragraphs each of which
+has a short title alongside it. Apart from glossaries, this format
+is useful for presenting a set of named elements to the reader. The
+format is as follows:
+
+    <DL>
+    <DT>Term
+    <DD>definition paragraph
+    <DT>Term2
+    <DD>Definition of term2
+    ...
+    </DL>
+
+
+Lists
+-----
+
+A list is a sequence of paragraphs, each of which is preceded by a
+special mark or sequence number. The format is:
+
+    <UL>
+    <LI>list element
+    <LI>another list element ...
+    </UL>
+
+The opening list tag must be immediately followed by the first list
+element. The representation of the list is not defined here, but a
+bulleted list for unordered lists, and a sequence of numbered paragraphs
+for an ordered list would be quite appropriate. Other possibilities
+for interactive display include embedded scrollable browse panels.
+
+Opening list tags are:
+
+UL
+    A list multi-line paragraphs, typically separated by some white
+    space.
+
+the closing tag must obviously match the opening tag.
